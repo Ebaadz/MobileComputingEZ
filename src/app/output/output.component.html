@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Tip Calculation Result</h1>
+  <div *ngIf="data">
+    <p>Cost of Service: {{ data.cost | currency }}</p>
+    <p>Service Quality: {{ data.quality }}</p>
+    <p>Round Up Tip: {{ data.roundUp }}</p>
+    <p>Calculated Tip: {{ calculatedTip | currency }}</p>
+    <p>Total Bill: {{ totalBill | currency }}</p>
+  </div>
+  <button (click)="goBack()">Go Back</button>
+</div>
+
